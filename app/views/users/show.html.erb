@@ -1,0 +1,17 @@
+<% if flash[:notice] %>
+  <%= flash[:notice] %>
+<% end %>
+
+<h1> <%= @user.name %> </h1>
+
+<% @dogs.each do |dog| %>
+  <p> <%= dog.name %> </p>
+<% end %>
+
+<h4> Add a Dog </h4>
+<%= form_for [@user, @dog] do |f| %>
+  <%= f.label :name, "Name:" %>
+  <%= f.text_field :name %>
+
+  <%= f.submit value='Add the Dog'%>
+<% end %>
