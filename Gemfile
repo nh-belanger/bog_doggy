@@ -9,6 +9,7 @@ gem 'jquery-rails'
 gem 'foundation-rails'
 gem 'devise'
 gem 'font-awesome-rails'
+gem 'simple_form'
 group :development do
   gem 'listen', '~> 3.0.5'
   gem 'spring'
