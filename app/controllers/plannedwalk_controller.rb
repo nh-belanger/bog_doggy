@@ -1,0 +1,2 @@
+class PlannedWalkController < ApplicationController
+end
