@@ -1,12 +1,13 @@
-
-
 .content-box {
   margin-top: 100px;
   background: rgba(0, 0, 0, .3);
-  /*border-radius: 50px;*/
   /*padding: 10px 10px 10px 10px;*/
   border-color: rgba(255, 255, 255, 1);
   border-style: solid;
+}
+
+.content-box:hover {
+  background: rgba(46, 44, 45, .6);
 }
 
 .link-box {
@@ -18,6 +19,13 @@
   border-style: solid;
 }
 
+.link-box:hover {
+  background: rgba(46, 44, 45, .6);
+}
+
+
+
+
 body {
   /*background-color: #05A0A8;*/
   background-image: url(/assets/background.jpg);
@@ -26,9 +34,23 @@ body {
 .homepage-title {
   font-family: 'Roboto Slab', serif;
   color: white;
+  display: inline;
+  text-align: center;
+}
+
+
+/*hi, there is 'float: left' on 'li' so you can simply remove 'inline-list' and add css:
+
+ul -> list-style-type: none; text-align: center
+li -> display: inline-block*/
+
+.link-ul {
+  display: inline-block;
 }
 
 .welcome-page-links {
   font-family: 'Roboto Slab', serif;
   color: white;
+
+  display: inline-block;
 }
