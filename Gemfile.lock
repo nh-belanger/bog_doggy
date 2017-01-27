@@ -71,6 +71,8 @@ GEM
       factory_girl (~> 4.8.0)
       railties (>= 3.0.0)
     ffi (1.9.17)
+    font-awesome-rails (4.7.0.1)
+      railties (>= 3.2, < 5.1)
     foundation-rails (6.2.1.0)
       railties (>= 3.1.0)
       sass (>= 3.3.0, < 3.5)
@@ -217,6 +219,7 @@ DEPENDENCIES
   capybara
   devise
   factory_girl_rails
+  font-awesome-rails
   foundation-rails
   jquery-rails
   launchy
