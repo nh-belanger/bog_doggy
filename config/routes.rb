@@ -1,9 +1,9 @@
 Rails.application.routes.draw do
+  get root 'welcome#index'
+
   devise_for :users
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
   resources :users do
     resources :dogs
   end
-
-  root to: "users#index"
 end
